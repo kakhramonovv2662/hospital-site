@@ -1,0 +1,254 @@
+.header {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 40px;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+}
+
+.contact {
+    background-image: url('../img/phone-img.png');
+    background-repeat: no-repeat;
+    background-size: 29px;
+
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #272727;
+        margin-left: 40px;
+        padding-bottom: 3px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__number {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #272727;
+        margin-left: 36px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+.dental {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+        top: -20px;
+        left: 85px;
+    }
+
+    &__img {
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__link {
+        margin-right: 5px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: #0055B8;
+        padding-top: 10px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+.oclock {
+    background-image: url('../img/o\'clock-img.png');
+    background-repeat: no-repeat;
+    block-size: 30px;
+
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #00B007;
+        padding-bottom: 3px;
+        padding-left: 35px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #272727;
+        padding-left: 35px;
+    }
+}
+
+.navbar {
+    max-width: 1010px;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: #0055B8;
+    border-radius: 10px;
+    top: 95px;
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        padding: 24px 23px;
+    }
+
+    &__item {
+        padding-right: 35px;
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+
+        &:hover {
+            color: #FFD600;
+        }
+
+        &:active {
+            color: #FFD600;
+            opacity: 0.6;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding-left: 320px;
+    }
+
+    &__img {
+        margin-right: 13px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+.logo {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact {
+        display: none;
+    }
+
+    .dental {
+        display: none;
+    }
+
+    .oclock {
+        display: none;
+    }
+
+    .logo {
+        display: block;
+        padding-left: 10px;
+    }
+
+    .navbar {
+        max-width: 1010px;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        background-color: #0055B8;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+    
+        &__list {
+            display: flex;
+            align-items: center;
+            padding: 24px 23px;
+        }
+    
+        &__item {
+            padding-right: 35px;
+
+            &:nth-child(1) {
+                padding-left: 60px;
+            }
+        }
+    
+        &__link {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    
+        &__wrapper {
+            padding-left: 0;
+        }
+    
+        &__img {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .header {
+        padding-bottom: 0;
+    }
+
+    .navbar {
+
+        &__list {
+            display: none;
+        }
+
+        &__wrapper {
+            display: none;
+        }
+    }
+}

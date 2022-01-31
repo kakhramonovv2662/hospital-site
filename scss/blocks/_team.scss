@@ -1,0 +1,42 @@
+.team {
+    position: relative;
+    z-index: 1;
+
+    &__wrapper {
+        position: absolute;
+        z-index: 1;
+        top: -300px;
+        margin-top: 380px;
+    }
+
+    &__dotted {
+        max-width: 50px;
+        width: 100%;
+        border: 3px solid #FFD600;
+        background-color: #FFD600;
+        margin-left: 485px;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color: #272727;
+        margin-left: 370px;
+        margin-bottom: 11px;
+    }
+
+    &__text {
+        max-width: 900px;
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #4D4D4D;
+        margin-left: 50px;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,197 @@
+.hero {
+    position: relative;
+    z-index: 1;
+    background-color: #E9EDEE;
+    height: 630px;
+   
+    &__img {
+        position: absolute;
+        z-index: -1;
+        left: calc(50% - 639px);
+        top: 0px;
+    }
+
+    &__bg-img {
+        display: none;
+    }
+
+    &__tablet-img {
+        display: none;
+    }
+}
+
+.contant {
+    max-width: 543px;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 2;
+
+    &__text {
+        font-size: 18px;
+        line-height: 21px;
+        color: #272727;
+        margin-bottom: 10px;
+        padding-top: 50px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: #272727;
+        margin-bottom: 27px;
+    }
+
+    &__btn {
+        max-width: 265px;
+        width: 100%;
+        padding: 25px;
+        background: #0055B8;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 100px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+.wrapper {
+
+    &__btn {
+        width: 42px;
+        height: 70px;
+        background: #FFD600;
+        border-radius: 5px;
+        border: none;
+        margin-right: 9px;
+        
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__right-img {
+        width: 70px;
+        height: 70px;
+        background: #FFD600;
+        border-radius: 5px;
+        border: none;
+
+          
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hero {
+        background-image: url('../../img/MaskGroup-img.png');
+        background-repeat: no-repeat;
+        background-size: 800px;
+
+        &__tablet-img {
+            display: block;
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+
+    .contant {
+
+        &__text {
+            font-size: 14px;
+        }
+
+         &__title {
+             max-width: 400px;
+             line-height: 35px;
+             width: 100%;
+             font-size: 35px;
+        }
+
+        &__btn {
+            max-width: 220px;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .hero {
+        background-image: none;
+        position: relative;
+        z-index: 1;
+
+            &__bg-img {
+                display: block;
+                position: relative;
+                z-index: 1;
+            }
+
+            &__tablet-img {
+                display: none;
+            }
+        }
+
+        .contant {
+            padding-top: 0;
+
+            &__text {
+                max-width: 200px;
+                width: 100%;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &__title {
+                font-size: 28px;
+                line-height: 35px;
+                text-align: center;
+            }
+
+            &__btn {
+                display: none;
+            }
+        }
+
+        .wrapper {
+            position: absolute;
+            z-index: 1;
+            top: -100px;
+
+            &__btn {
+                width: 35px;
+                height: 50px;
+            }
+
+            &__right-img {
+                width: 35px;
+                height: 50px;
+            }
+        }
+}

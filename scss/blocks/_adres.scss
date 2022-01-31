@@ -1,0 +1,143 @@
+.adres {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+
+    &__number {
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 35px;
+        color: #222;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__call {
+        font-size: 15px;
+        line-height: 21px;
+        text-decoration-line: underline;
+        color: #000000;
+        margin-left: 130px;
+        margin-bottom: 15px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    &__gmail {
+        font-size: 18px;
+        line-height: 21px;
+        text-decoration-line: underline;
+        color: #000000;
+        margin-left: 10px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__address {
+        max-width: 198px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-left: 10px;
+    }
+}
+
+.servis {
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: normal;
+        margin-bottom: 10px;
+        margin-left: 70px;
+    }
+
+    &__list {
+        margin-left: 70px;
+    }
+
+    &__link {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;color: #222;
+        margin-bottom: 6px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+.mental {
+    margin-left: 60px;
+    margin-right: 80px;
+    margin-top: 20px;
+
+    &__item {
+        margin-bottom: 5px;
+    }
+
+    &__link {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #222;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__title {
+        position: relative;
+        z-index: 1;
+        top: -25px;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    &__text {
+        max-width: 180px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 15px;
+    }
+}

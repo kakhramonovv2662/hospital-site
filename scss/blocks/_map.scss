@@ -1,0 +1,129 @@
+.map {
+
+    &__dotted {
+        display: block;
+        max-width: 50px;
+        width: 100%;
+        background-color: #FFD600;
+        border: 2px solid #FFD600;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color: #272727;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        max-width: 860px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #4D4D4D;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+    }
+}
+
+.iframe {
+    position: relative;
+    z-index: 1;
+    left: -122px;
+
+    &__form {
+        max-width: 430px;
+        width: 100%;
+        background: #0055B8;
+        border-radius: 5px;
+        padding: 25px 33px 18px 33px;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        top: 110px;
+        left: 190px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color: #fff;
+        padding-bottom: 30px;
+    }
+
+    &__text-input {
+        display: block;
+        max-width: 473px;
+        width: 100%;
+        padding: 16px 15px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        border: 1px solid #fff;
+        background-color: #0055B8;
+        margin-bottom: 12px;
+        color: #272727;
+        
+        &::placeholder {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &__check-input {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        z-index: 1;
+        right: 30px;
+        top: 305px;
+    }
+
+    &__button {
+        max-width: 230px;
+        width: 100%;
+        padding: 17px;
+        text-align: center;
+        border-radius: 5px;
+        background: #FFD600;
+        border: none;
+        margin-bottom: 20px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    &__text {
+        max-width: 270px;
+        width: 100%;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+    }
+
+    &__images {
+        position: absolute;
+        z-index: 1;
+        top: 180px;
+        left: 750px;
+    }
+}

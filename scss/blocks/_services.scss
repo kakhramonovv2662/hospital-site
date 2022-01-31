@@ -1,0 +1,40 @@
+.services {
+    position: relative;
+    z-index: 1;
+
+    &__contant {
+        position: absolute;
+        z-index: 1;
+        top: -300px;
+    }
+
+    &__dotted {
+        max-width: 50px;
+        width: 100%;
+        border: 3px solid #FFD600;
+        background-color: #FFD600;
+        margin-left: 490px;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        color: #272727;
+        margin-left: 450px;
+        margin-bottom: 11px;
+    }
+
+    &__text {
+        max-width: 545px;
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: #4D4D4D;
+        margin-left: 250px;
+    }
+}
